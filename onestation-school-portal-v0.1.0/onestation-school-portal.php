@@ -1,7 +1,5 @@
 <?php
-/**
- * Plugin Name: OneStation School Portal
- * Version: 0.1.0
- */
-if(!defined('ABSPATH')) exit;
-define('OSP_VERSION','0.1.0');
+/** Plugin Name: OneStation School Portal */
+defined('ABSPATH')||exit;
+require_once __DIR__.'/includes/class-plugin.php';
+(new OneStation\Plugin())->run();
